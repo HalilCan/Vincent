@@ -156,6 +156,14 @@ void BubbleSort(IntArrayType IntArray, int Count)
     }
 }
 
+/* For use of an index array, see:
+ * if (A[Index[k]] > A[Index[k + 1]])
+   {
+   Done = false;
+   Swap(Index[k], Index[k + 1]);
+   }
+*/
+
 
 /* Given:  MinSize  The minimum allowable size.
            MaxSize  The maximum allowable size.
