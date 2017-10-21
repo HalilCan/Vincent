@@ -42,3 +42,13 @@ void fn(parameters)
 {
 
 }
+
+/*
+ * Also, notice the use of "function prototypes", which look like the following
+ * and appear at the top of the source code file. They instruct the compiler that
+ * we will have functions with these names, parameter lists, etc. That way, you
+ * can place the three functions in any order down the page. Without function
+ * prototypes you have to be sure that the code for a function is given above any
+ * other function which calls the first function. Since that can be confusing to
+ * keep track of, function prototypes are highly recommended.
+ */
