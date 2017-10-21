@@ -56,3 +56,24 @@ float Round2(float Value)
     Temp = Value * 100.0 + 0.5;
     return Temp / 100.0;
 }
+
+
+/* Given:   Value      a floating point number
+            NumPlaces  a positive integer giving the number of
+                       decimal places to which to round the answer.
+   Task:    To round Value to NumPlaces decimal places.  If NumPlaces
+            is not postive, Value is returned unchanged as the answer.
+   Return:  The rounded number in the function name.
+*/
+float Round4(float Value, int NumPlaces)
+{
+    int k, Temp;
+    float Factor;
+
+    Factor = 1;
+    for (k = 0; k < NumPlaces; k++)
+        Factor = Factor * 10;
+
+    Temp = Value * Factor + 0.5;
+    return Temp / Factor;
+}
