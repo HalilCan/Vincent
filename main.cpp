@@ -34,9 +34,25 @@ int main() {
     return 0;
 }
 
+/* Given:  Void
+   Task:   Determine the area of a predetermined floating-point rectangle
+   Return: Void (cout the result)
+*/
 void DoArea() {
     float length, width;
     length = 10.3088f;
     width = 5.219f;
     cout << "The Area of a rectangle with dimensions 5.2 and 10.3 is: " << width*length << endl;
+}
+
+/* Given:  Value  a floating point number
+   Task:   To round Value to 2 decimal places.
+   Return: The rounded number in the function name.
+*/
+float Round2(float Value)
+{
+    int Temp;
+
+    Temp = Value * 100.0 + 0.5;
+    return Temp / 100.0;
 }
