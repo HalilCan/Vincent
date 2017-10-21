@@ -26,10 +26,17 @@ int main() {
 
     DoArea();
 
-
-
     cout << setw(8) << "Value" << setw(8) << "Total" << endl;
     cout << setw(8) << Value << setw(8) << Total << endl;
+
+    struct PartType
+    {
+        int PartNumber;
+        float Price;
+    };
+    PartType part01;
+    part01.PartNumber = 10;
+    cout << part01.PartNumber << endl;
 
     return 0;
 }
